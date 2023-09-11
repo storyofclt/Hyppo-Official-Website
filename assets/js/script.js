@@ -91,39 +91,4 @@ $(document).ready(function() {
       }
     }
   });
-
-
 })
-
-//form EventListening
-
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("registerTestUser");
-
-  form.addEventListener("submit", function(event) {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const whatsapp = document.getElementById("whatsapp").value;
-    const email = document.getElementById("email").value;
-
-    fetch("/register", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          name,
-          whatsapp,
-          email
-        })
-      }).then(response => response.json())
-      .then(data => {
-        if (data.success) {
-          alert("Successfully registered!");
-        } else {
-          alert("Error occurred. Please try again.");
-        }
-      });
-  });
-});
