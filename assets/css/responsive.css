@@ -29,6 +29,13 @@
     font-weight: normal;
   }
 
+  .hero-image{
+    background-position: right 0% bottom 30%;
+  }
+  .hero-overlay{
+    height:100%;
+  }
+
   .header-running-text {
     margin: auto;
     max-width: 80%;
