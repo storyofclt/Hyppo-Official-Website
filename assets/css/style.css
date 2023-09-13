@@ -8,6 +8,7 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
+  z-index:3;
 }
 
 .header-container {
@@ -117,7 +118,6 @@ body {
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
-  /* Stack order */
 }
 
 .hero-image {
@@ -194,10 +194,8 @@ body {
 
 .hero-btn {
   -webkit-transition-duration: 0.6s;
-  /* Slower transition */
   transition-duration: 0.6s;
   background-color: #89CFF0;
-  /* Soft blue */
   border-radius: 10px;
   border: 1px solid #89CFF0;
   width: 220px;
@@ -358,19 +356,6 @@ body {
 
 .feature-display-last {
   transition-delay: 0.30s;
-}
-
-.feature-icon {
-  background-color: white;
-  border-radius: 50%;
-  height: 85px;
-  width: 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  margin-bottom: 25px;
-  box-shadow: 6px 7px 13px #393939;
 }
 
 .feature-head-text {
