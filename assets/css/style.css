@@ -546,6 +546,14 @@ div.info-content i.fa.fa-info-circle {
   height: 100%;
 }
 
+.webLogo{
+  width:30px;
+  height:auto;
+  margin:auto;
+  display: block;
+  padding-top: 30px;
+}
+
 .custom-btn:hover {
   background-color: #257a99;
 }
